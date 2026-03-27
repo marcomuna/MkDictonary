@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictonary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        class="glassInput"
+        name="search"
+        id="input"
+        placeholder="Search Word"
+        value="digital"
+      />
+      <br />
+      <div class="button">
+        <button class="btn">Search</button>
+      </div>
+    </div>
+    <div class="data">
+      <div class="word">
+
+        <h2></h2>
+        <button class="audioBtn">🔊
+          <audio class="audio" src="https://api.dictionaryapi.dev/media/pronunciations/en/digital-us.mp3"></audio>
+        </button>
+      </div>
+      <h3>Meanings</h3>
+      <p class="p1"></p>
+      <p class="p2"></p>
+      <p class="p3"></p>
+    </div>
+    <footer>
+      <h4>&copy; Muna</h4>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

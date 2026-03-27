@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+}
+body {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* grid-area: 1px; */
+  /* gap: 10px; */
+  height: 100vh;
+  align-items: start;
+  justify-content: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background-image: url("./Assets/Abstract\ 12.jpg");
+  background-image: url("https://images.unsplash.com/photo-1731398916709-19c7ae1be371?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 80%;
+  height: 30vh;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(17, 16, 16, 0.237) 0px 3px 6px;
+
+  text-align: center;
+}
+
+#input {
+  height: 30px;
+  width: 55vw;
+  padding: 5px 20px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn {
+  margin: 10px;
+  font-weight: bold;
+  padding: 10px 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.audioBtn{
+    all: unset;
+    font-size: 30px;
+    visibility: hidden;
+    
+}
+
+
+
+
+.data{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 80%;
+  /* height: 50vh; */
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow:
+  rgba(0, 0, 0, 0.16) 0px 3px 6px,
+  rgba(17, 16, 16, 0.237) 0px 3px 6px;
+  visibility: hidden;
+}
+
+.word{
+    display: flex;
+}
+h3{
+    margin: 0;
+    color: red;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
