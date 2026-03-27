@@ -9,6 +9,7 @@ let url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
 let data;
 let audioUrl;
+
 async function searchWord() {
   let res = await fetch(url + input.value);
   let datas = await res.json();
@@ -44,6 +45,8 @@ async function Search() {
   document.querySelector(".p3").innerText = `3.  ${definitation3}`;
   dataBox.style.visibility = "visible";
   audioBtn.style.visibility = "visible";
+
+  input.value = "";
 }
 
 audioBtn.addEventListener("click", () => {
