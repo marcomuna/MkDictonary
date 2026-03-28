@@ -104,3 +104,10 @@ window.addEventListener("beforeinstallprompt", (e) => {
   deferredPrompt = e;
   console.log("Install available");
 });
+
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("splash").style.display = "none";
+  }, 2000); // 2 seconds
+});

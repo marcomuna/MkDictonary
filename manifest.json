@@ -3,9 +3,9 @@
   "short_name": "Dictionary",
   "start_url": "/",
   "scope": "/",
-  "display": "fullscreen",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "display": "standalone",
+  "background_color": "#1e3a8a",
+  "theme_color": "#1e3a8a",
   "description": "Simple dictionary app",
   "icons": [
     {
