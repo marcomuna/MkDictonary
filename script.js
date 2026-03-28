@@ -86,12 +86,13 @@ audioBtn.addEventListener("click", () => {
 });
 
 
+// Register Service Worker
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register("/service-worker.js")
-      .then((reg) => console.log("Service Worker Registered"))
-      .catch((err) => console.log("Error:", err));
+      .then(() => console.log("✅ SW Registered"))
+      .catch((err) => console.log("❌ SW Error:", err));
   });
 }
 
