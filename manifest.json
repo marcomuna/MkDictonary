@@ -3,7 +3,7 @@
   "short_name": "Dictionary",
   "start_url": "/",
   "scope": "/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "description": "Simple dictionary app",
