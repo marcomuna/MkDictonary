@@ -94,3 +94,12 @@ if ("serviceWorker" in navigator) {
       .catch((err) => console.log("Error:", err));
   });
 }
+
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  console.log("Install available");
+});
