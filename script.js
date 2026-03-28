@@ -10,12 +10,42 @@ let url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 let data;
 let audioUrl;
 
-async function searchWord() {
-  let res = await fetch(url + input.value);
-  let datas = await res.json();
-  data = datas[0];
-}
+// async function searchWord() {
+//   let res = await fetch(url + input.value);
+//   let datas = await res.json();
+//   data = datas[0];
+// }
 
+async function searchWord() {
+  try {
+    if (!input.value.trim()) {
+      alert("Please enter a word");
+      return;
+    }
+
+    let res = await fetch(url + input.value);
+
+    // ❗ handle API error
+    if (!res.ok) {
+      alert("Word not found");
+      return;
+    }
+
+    let datas = await res.json();
+
+    // ❗ check data exists
+    if (!datas || !datas.length) {
+      alert("No data found");
+      return;
+    }
+
+    data = datas[0];
+
+  } catch (error) {
+    console.log(error);
+    alert("Something went wrong");
+  }
+}
 btn.addEventListener("click", Search);
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
